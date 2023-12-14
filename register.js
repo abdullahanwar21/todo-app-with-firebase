@@ -20,11 +20,8 @@ form.addEventListener('submit', (e) => {
         addDoc(collection(db, "users"), {
             username: name.value,
             email: email.value,
-            // uid: user.uid,
-            // profileUrl: url
         }).then((res) => {
-            console.log(res);
-            window.location = 'index.html'
+            window.location = './login.html'
         }).catch((err) => {
             console.log(err);
         })
