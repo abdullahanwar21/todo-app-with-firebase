@@ -25,9 +25,6 @@ form.addEventListener('submit', (e) => {
         }).catch((err) => {
             console.log(err);
         })
-        // console.log(user);
-        // window.location = 'login.html';
-        // ...
     })
     .catch((error) => {
         const errorCode = error.code;

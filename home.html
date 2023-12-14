@@ -39,10 +39,12 @@
                       <div class="mb-3">
                         <label for="title" class="form-label text-light">Title</label>
                         <input type="text" class="form-control" id="title" placeholder="Todo Title">
+                        <span class="text-danger titleError fw-bold"></span>
                       </div>
                       <div class="mb-3">
                         <label for="description" class="form-label text-light">Add Descriptioin</label>
                         <textarea class="form-control" id="description" rows="3"></textarea>
+                        <span class="text-danger descError fw-bold"></span>
                       </div>
                       <button type="submit" class="btn text-light addTaskBtn mb-3">Add Task</button>
                     </form>
@@ -63,25 +65,16 @@
                         <th scope="col">Action</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <th scope="row">JS Task</th>
+                    <tbody id="tbody">
+                      <!-- <tr> -->
+                        <!-- <td>1</td> -->
+                        <!-- <th scope="row">JS Task</th>
                         <td>i have task from my sir abdullah to make a todo app</td>
                         <td>
                           <button class="btn btn-info text-light my-2" title="Edit"><i class="bi bi-pencil-square"></i></button>
                           <button class="btn btn-danger text-light" title="Delete"><i class="bi bi-trash"></i></button>
                         </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>
-                            <button class="btn btn-info text-light my-2"><i class="bi bi-pencil-square"></i></button>
-                            <button class="btn btn-danger text-light"><i class="bi bi-trash"></i></button>
-                        </td>
-                      </tr>
+                      </tr> -->
                     </tbody>
                   </table>
             </div>
