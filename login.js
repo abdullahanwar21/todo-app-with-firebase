@@ -13,20 +13,14 @@ form.addEventListener("submit", (e) => {
       const user = userCredential.user;
       console.log(user);
       window.location = './home.html'
+      
       // ...
     }).catch((error) => {
         const errorCode = error.code;
         console.log(errorCode);
         const errorMessage = error.message;
         console.log(errorMessage);
-        logError.innerHTML = errorMessage;
+        logError.innerHTML = errorCode;
     })
-    // Swal.fire({
-    //     position: "top-end",
-    //     icon: "success",
-    //     title: "Successfully Logged In",
-    //     showConfirmButton: true,
-    //     timer: 1500
-    //   });
   })
 
