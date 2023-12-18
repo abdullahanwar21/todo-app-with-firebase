@@ -17,6 +17,7 @@ form.addEventListener('submit', (e) => {
     .then((userCredential) => {
         // Signed up 
         const user = userCredential.user;
+        console.log(user);
         addDoc(collection(db, "users"), {
             username: name.value,
             email: email.value,
@@ -29,6 +30,7 @@ form.addEventListener('submit', (e) => {
     .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        document.querySelector(".errorCust").innerHTML = error.message
         // ..
     });
 });

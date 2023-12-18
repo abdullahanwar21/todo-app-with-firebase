@@ -50,8 +50,10 @@ onAuthStateChanged(auth, async (user) => {
         // console.log("Document written with ID: ", setAn);
         console.log("Document written with ID: ", docRef.id);
         // location.reload(uid);
-      } catch (e) {
-        console.error("Error adding document: ", e.message);
+      } catch (error) {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.error("Error adding document: ", error.message);
       }
     });
   } else {
