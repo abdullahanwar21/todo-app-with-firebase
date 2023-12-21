@@ -37,29 +37,31 @@
       <div class="container">
         <div class="row">
           <div class="offset-md-3 col-md-6 offset-md-3">
+            <span class="text-danger titleError fw-bold mb-3 " ></span>
+
+            <p class="my-3 text-danger custErr fw-bold" align="center"></p>
             <form id="todoForm">
               <div class="mb-3">
                 <label for="title" class="form-label text-light">Title</label>
                 <input
-                  type="text"
-                  class="form-control"
-                  id="title"
-                  placeholder="Todo Title"
+                type="text"
+                class="form-control"
+                id="title"
+                placeholder="Todo Title"
                 />
-                <span class="text-danger titleError fw-bold"></span>
               </div>
-              <div class="mb-3">
+              <div class="mb-1">
                 <label for="description" class="form-label text-light"
-                  >Add Description</label
+                >Add Description</label
                 >
                 <textarea
                   class="form-control"
                   id="description"
                   rows="3"
                 ></textarea>
-                <span class="text-danger descError fw-bold"></span>
+                <span class="text-danger fw-bold"></span>
               </div>
-              <button type="submit" class="btn text-light addTaskBtn mb-3">
+              <button type="submit" class="btn text-light addTaskBtn mb-2 ">
                 Add Task
               </button>
             </form>
@@ -76,7 +78,7 @@
               <tr>
                 <th scope="col">Title</th>
                 <th scope="col">Description</th>
-                <!-- <th scope="col">Time</th> -->
+                <th scope="col">Created At</th>
                 <th scope="col">Action</th>
               </tr>
             </thead>
@@ -97,7 +99,7 @@
     </div>
 
     <!-- Update Todo Modal -->
-    <div
+    <!-- <div
       class="modal fade"
       id="exampleModal"
       tabindex="-1"
@@ -118,80 +120,38 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form id="todoForm">
+            <form id="modalForm">
               <div class="mb-3">
-                <label for="title" class="form-label text-light">Title</label>
+                <label for="title" class="form-label">Title</label>
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control modalTitle"
                   id="title"
                   placeholder="Todo Title"
                 />
                 <span class="text-danger titleError fw-bold"></span>
               </div>
               <div class="mb-3">
-                <label for="description" class="form-label text-light"
+                <label for="description" class="form-label"
                   >Add Description</label
                 >
                 <textarea
-                  class="form-control"
+                  class="form-control modalDesc"
                   id="description"
                   rows="3"
                 ></textarea>
                 <span class="text-danger descError fw-bold"></span>
               </div>
-              <button
-                type="submit"
-                class="btn btn-secondary text-light"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="submit" class="btn btn-info text-light">
+              <button type="submit" class="btn btn-info text-light submitBtn">
                 Save changes
               </button>
             </form>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Update Todo Modal -->
 
-    <!-- Delete Todo Modal -->
-    <div
-      class="modal fade"
-      id="deleteModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <h4>Are You Sure To delete the task !</h4>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-danger">Delete</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Delete Todo Modal -->
 
     <script type="module" src="./home.js"></script>
 
